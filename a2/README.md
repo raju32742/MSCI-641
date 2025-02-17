@@ -1,11 +1,11 @@
-# Add execution instructions here
-# Add execution instructions here
-# To activate the Environment first write the command 
-# -------------------------------------------------------------------------------------
-source /home/gsahu/miniconda3/bin/activate /home/gsahu/miniconda3/envs/msci641_env/
+## Add execution instructions here
+## Add execution instructions here
+## To activate the Environment first write the command 
+-------------------------------------------------------------------------------------
+`source /home/gsahu/miniconda3/bin/activate /home/gsahu/miniconda3/envs/msci641_env/`
 
-# To run the main.py file 
-python3 a2/main.py  /DATA1/smturaju/assignments/a1/data 
+## To run the main.py file 
+`python3 a2/main.py  /DATA1/smturaju/assignments/a1/data` 
 
 # To Run the inference file 
 # Classifier type could be :[ mnb_uni, mnb_bi, mnb_uni_bi, mnb_uni_ns, mnb_bi_ns mnb_uni_bi_ns ] 
@@ -13,6 +13,7 @@ python3 a2/inference.py /DATA1/smturaju/assignments/a2/data/sentence.txt mnb_uni
 
 # Train the MultinomialNB classifier and fine-tune with validation dataset to find the best model. Finally, calculate the 
 # Test accuracy using test dataset using best model for each text feature format. 
+```
 |--------------------------------------------------------------|
 | File name          | Validation Acc     | Test Acc           |
 |--------------------------------------------------------------|
@@ -23,6 +24,8 @@ python3 a2/inference.py /DATA1/smturaju/assignments/a2/data/sentence.txt mnb_uni
 | mnb_bi_ns.pkl      | 0.780450           | 0.780288           |
 | mnb_uni_bi_ns.pkl  | 0.823575           | 0.822863           |
 |--------------------------------------------------------------|
+```
+```
 # Test Accuracy with Best Model for each Text Feature type with stop words and stop words remove. 
 |--------------------------------------------------------------|
 | Stopwords removed  | Text features      | Accuracy (test set)|
@@ -34,7 +37,7 @@ python3 a2/inference.py /DATA1/smturaju/assignments/a2/data/sentence.txt mnb_uni
 | no                 | bigrams            | 0.824887           |
 | no                 | unigrams+bigrams   | 0.830788           |
 |--------------------------------------------------------------|
-
+```
 #----------------------------------------------------------------------------------------------------------------------------------------
 # Which condition performed better: with or without stopwords? Write a brief paragraph (5-6 sentences) discussing why you think there is a difference in performance.
 #----------------------------------------------------------------------------------------------------------------------------------------
