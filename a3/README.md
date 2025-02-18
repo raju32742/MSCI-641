@@ -1,29 +1,29 @@
-# Add execution instructions here
-# To activate the Environment first write the command 
-# -------------------------------------------------------------------------------------
-source /home/gsahu/miniconda3/bin/activate /home/gsahu/miniconda3/envs/msci641_env/
+## Add execution instructions here
+## To activate the Environment first write the command 
+## -------------------------------------------------------------------------------------
+`source /home/gsahu/miniconda3/bin/activate /home/gsahu/miniconda3/envs/msci641_env/`
 
-# To run the main.py file 
-python3 a3/main.py /DATA1/smturaju/assignments/a1/data
+## To run the main.py file 
+`python3 a3/main.py /DATA1/smturaju/assignments/a1/data`
 
-# To Run the inference file 
-# We have used genism library to train a Word2Vec model on the Amazon corpus
-# Model name : w2v.model
-python3 a3/inference.py /DATA1/smturaju/assignments/a3/data/word.txt
+## To Run the inference file 
+## We have used genism library to train a Word2Vec model on the Amazon corpus
+## Model name : w2v.model
+`python3 a3/inference.py /DATA1/smturaju/assignments/a3/data/word.txt`
 
-# Explanation of main.py
+## Explanation of main.py
 1. Read the pos.txt and neg.txt
 2. Concatenate pos.txt and neg.txt 
 3. Apply the preprocessing technique using 'gensim.utils.simple_preproces()' that converting the text to lowercase, tokenizing the sentence into individual words, removing punctuation
 4. Apply the Word2Vec model
 
-# Explanation of inference.py
+## Explanation of inference.py
 1. In the word.txt file contains 'good', and 'bad' words 
 2. Predict top 20 similar words for good and bad respectively
 
-#----------------------------------------------------------------------------------------------------------------------------------------
-# Find 20 most similar words to “good” and “bad”
-#----------------------------------------------------------------------------------------------------------------------------------------
+##----------------------------------------------------------------------------------------------------------------------------------------
+## Find 20 most similar words to “good” and “bad”
+##----------------------------------------------------------------------------------------------------------------------------------------
 
 |--------------------------------|--------------------------------|
 | Words most similar to 'good'   | Words most similar to 'bad'    |
